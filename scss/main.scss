@@ -50,3 +50,15 @@ p{
         justify-content: center;
     }
 }
+
+img{
+    border-radius:10px;
+}
+
+.col{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align:justify;
+}
