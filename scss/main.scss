@@ -15,6 +15,7 @@ footer.footer{
     position: absolute;
     bottom: 0;
     width:100%;
+    overflow-wrap: break-word;
 }
 
 
@@ -61,4 +62,33 @@ img{
     justify-content: center;
     align-items: center;
     text-align:justify;
+}
+
+.image-card{
+    position:relative;
+   
+
+    &:hover{
+        .titre-image{
+            opacity: 1;
+        }
+        img{
+            filter: brightness(0.3);
+        }
+    }
+    
+    img{
+        transition: all 0.3s;
+        height: 300px;
+        width: 300px;
+        object-fit: fill;
+    }
+    .titre-image{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.3s;
+    }
 }
