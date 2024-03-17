@@ -4,41 +4,268 @@
     </div>
 </div>
 <div class="container">
+    <div class="text-center">
+        <button class="btn btn-primary text-white padding-4 mt-3" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"> Ajouter une photo</button>
+        <!-- Modal edition -->
+        <div class="modal fade" id="EditionPhotoModal" tabindex="-1" arialabelledby="EditionPhotoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition Photo</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="NamePhotoInput" class="form-label">Titre</label>
+                                <input type="text" class="form-control" id="NamePhotoInput "placeholder="Lasagnes à la bolognese" name="Titre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="ImageInput" class="form-label">Image</label>
+                                <input type="file" class="form-control" id="ImageInput" name="Image">
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary">Enregistrer</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row row-cols-2 row-cols-lg-3">
         <div class="col p-3">
             <div class="image-card text-white">
                 <img src="../images/wine-5871554_1280.jpg"  alt="table food and wine" class="rounded w-100"/>
                 <p class="titre-image">Dinner pour  les amoreux</p>
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
+                <!-- Modal edition -->
+                <div class="modal fade" id="EditionPhotoModal" tabindex="-1" arialabelledby="EditionPhotoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition Photo</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="NamePhotoInput" class="form-label">Titre</label>
+                                        <input type="text" class="form-control" id="NamePhotoInput "placeholder="Lasagnes à la bolognese" name="Titre">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="ImageInput" class="form-label">Image</label>
+                                        <input type="file" class="form-control" id="ImageInput" name="Image">
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Enregistrer</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
             </div>
         </div>
         <div class="col p-3">
             <div class="image-card text-white">
                 <img src="../images/meat.jpg" alt="delicious meat" class="rounded w-100"/>
                 <p class="titre-image">Viande 100% française</p>
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
+                <!-- Modal edition -->
+                <div class="modal fade" id="EditionPhotoModal" tabindex="-1" arialabelledby="EditionPhotoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition Photo</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="NamePhotoInput" class="form-label">Titre</label>
+                                        <input type="text" class="form-control" id="NamePhotoInput "placeholder="Lasagnes à la bolognese" name="Titre">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="ImageInput" class="form-label">Image</label>
+                                        <input type="file" class="form-control" id="ImageInput" name="Image">
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Enregistrer</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
             </div>
         </div>
         <div class="col p-3">
             <div class="image-card text-white">
                 <img src="../images/chef-4521912_1280.jpg" alt="chef" class="rounded w-100"/>
                 <p class="titre-image">Les meilleures chefs</p>
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
+                <!-- Modal edition -->
+                <div class="modal fade" id="EditionPhotoModal" tabindex="-1" arialabelledby="EditionPhotoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition Photo</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="NamePhotoInput" class="form-label">Titre</label>
+                                        <input type="text" class="form-control" id="NamePhotoInput "placeholder="Lasagnes à la bolognese" name="Titre">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="ImageInput" class="form-label">Image</label>
+                                        <input type="file" class="form-control" id="ImageInput" name="Image">
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Enregistrer</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
             </div>
         </div>
         <div class="col p-3">
             <div class="image-card text-white">
                 <img src="../images/dinner.png" alt="table with delicious food" class="rounded w-100"/>
                 <p class="titre-image">Venez profiter de notre brunch</p>
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
+                <!-- Modal edition -->
+                <div class="modal fade" id="EditionPhotoModal" tabindex="-1" arialabelledby="EditionPhotoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition Photo</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="NamePhotoInput" class="form-label">Titre</label>
+                                        <input type="text" class="form-control" id="NamePhotoInput "placeholder="Lasagnes à la bolognese" name="Titre">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="ImageInput" class="form-label">Image</label>
+                                        <input type="file" class="form-control" id="ImageInput" name="Image">
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Enregistrer</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
             </div>
         </div>
         <div class="col p-3">
             <div class="image-card text-white">
                 <img src="../images/FondHeroScene.png" alt="group dinner" class="rounded w-100"/>
                 <p class="titre-image">Excellent pour les repas de groupe</p>
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
+                <!-- Modal edition -->
+                <div class="modal fade" id="EditionPhotoModal" tabindex="-1" arialabelledby="EditionPhotoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition Photo</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="NamePhotoInput" class="form-label">Titre</label>
+                                        <input type="text" class="form-control" id="NamePhotoInput "placeholder="Lasagnes à la bolognese" name="Titre">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="ImageInput" class="form-label">Image</label>
+                                        <input type="file" class="form-control" id="ImageInput" name="Image">
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Enregistrer</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
             </div>
         </div>
         <div class="col p-3">
             <div class="image-card text-white">
                 <img src="../images/dinner-table-444797_1280.jpg" alt="romantic dinner" class="rounded w-100"/>
                 <p class="titre-image">Excellent pour les dîners romantiques</p>
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
+                <!-- Modal edition -->
+                <div class="modal fade" id="EditionPhotoModal" tabindex="-1" arialabelledby="EditionPhotoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition Photo</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="NamePhotoInput" class="form-label">Titre</label>
+                                        <input type="text" class="form-control" id="NamePhotoInput "placeholder="Lasagnes à la bolognese" name="Titre">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="ImageInput" class="form-label">Image</label>
+                                        <input type="file" class="form-control" id="ImageInput" name="Image">
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Enregistrer</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
             </div>
-        </div>
-</div>
+        </div>  
+    </div>
+<div class="container">
+    <div class="text-center">
+        <a href="/reserver" class="btn btn-primary text-white"> Réserver</a>
+    </div>  
+</div>  
